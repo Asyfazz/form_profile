@@ -6,9 +6,10 @@ app = Flask(__name__)
 def form():
     return render_template('form_pendaftaran.html')
 
-@app.route('/profile')
-def profile():
-    return render_template('profile.html')
+
+@app.route('/myprofile')
+def myprofile():
+    return render_template('my-profile.html')
 
 @app.route('/update')
 def update():
